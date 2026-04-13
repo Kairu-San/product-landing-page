@@ -10,16 +10,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="icon" href="images/logo.png?v=999" type="image/png">
 </head>
 
 <body>
     <!-- Navbar -->
     <nav id="navbar">
-        <a href="#hero" class="navbar__logo">Yaomi</a>
+        <a href="#hero" class="navbar__logo">Ya<span><img class="navbar__orange" src="images/logo.png" alt="yaomi logo"></span>mi</a>
         <ul class="navbar__links">
             <li><a href="#features">Features</a></li>
             <li><a href="#products">Products</a></li>
-            <li><a href="#preorder">Pre-Order</a></li>
+            <li><a href="#preorder"><button class="navbar__button">Pre-Order</button></a></li>
         </ul>
     </nav>
 
@@ -157,7 +158,7 @@
             <span id="minutes">00</span>m :
             <span id="seconds">00</span>s
         </div>
-        <div class="preorder__button">
+        <div class="preorder__button-container">
             <button class="preorder__button">Pre-Order Now</button>
         </div>
     </section>
