@@ -1,23 +1,49 @@
+/* Base CSS Styling */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    overflow-x: hidden;
+}
+
 :root {
-    --primary-color: #25343F;
-    --secondary-color: #EAEFEF;
+    --primary-color: #1a2229;
+    --primary-light: #3a4d5c;
+    --primary-dark: #0e1317;
+
+    --secondary-color: #d6dddd;
+    --secondary-light: #ffffff; 
+
     --accent-color: #FF9B51;
+    --accent-light: #FFB67A;
+    --accent-dark: #CC6E2A;
+
+    --teal: #4A8FA8;
+    --danger: #E8543A;
+    --success: #5BA08A;
 }
 
 body {
     font-family: 'Raleway', sans-serif;
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    line-height: 1.5; 
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 img {
     max-width: 100%;
+    height: auto;
     display: block;
 }
 
@@ -29,3 +55,10 @@ a {
 ul {
     list-style: none;
 }
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+/* Navbar */
+
