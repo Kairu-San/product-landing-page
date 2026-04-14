@@ -15,8 +15,8 @@ html {
 
 :root {
     --primary-color: #1a2229;
-    --primary-light: #3a4d5c;
-    --primary-dark: #16191d;
+    --primary-light: rgba(33, 41, 46, 0.937);
+    --primary-dark: #15191f77;
 
     --secondary-color: #d6dddd;
     --secondary-light: #ffffff;
@@ -24,7 +24,7 @@ html {
 
     --accent-color: #f68a2f;
     --accent-light: #f59e4c;
-    --accent-dark: #c96d21;
+    --accent-dark: #c96d21dc;
 
 
     --teal: #4A8FA8;
@@ -88,6 +88,7 @@ body {
 section {
     scroll-margin-top: 4.5rem;
     padding-inline: 4rem;
+    padding-top: 2rem;
 }
 
 .navbar__logo {
@@ -154,8 +155,9 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items:stretch;
-    gap: 2rem; flex: 10 2 10;
+    align-items: stretch;
+    gap: 2rem;
+    flex: 10 2 10;
 }
 
 .hero__tag {
@@ -188,7 +190,6 @@ section {
 }
 
 .hero__button {
-
     padding: 0.6rem 0.6rem;
     border-radius: 7px;
     border: 1px solid;
@@ -216,7 +217,8 @@ section {
     color: var(--secondary-color);
     background-color: var(--primary-color);
     font-weight: bold;
-    border: 1px solid var(--primary-light);
+    border: 1px solid rgba(76, 86, 94, 0.937);
+    ;
     transition: all 0.3s ease;
 }
 
@@ -237,4 +239,74 @@ section {
 .hero__img-phone {
     border: 1px solid none;
     border-radius: 10px;
+}
+
+/* Features */
+
+#features {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.features__text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 35rem;
+}
+
+.features__tag {
+    color: var(--accent-color);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.features__tagline {
+    font-size: 3rem;
+}
+
+.features__sub {
+    color: var(--secondary-dark);
+}
+
+.features__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.features__card {
+    border: 1px solid none;
+    background-color: var(--primary-dark);
+    padding: 2rem 2rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    transition: all 0.3s ease;
+}
+
+.features__card:hover {
+    background-color: var(--primary-light);
+    transform: scale(1.02);
+}
+
+.features__icon {
+    border: 1px solid var(--accent-color);
+    background-color: #c96d2128;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+.features__title {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.features__desc {
+    color: var(--secondary-dark);
+
 }
